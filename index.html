@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/owfont-regular.css" />
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+    <title>Momentum</title>
+  </head>
+  <body>
+    <main id="main" class="main">
+      <div class="container">
+        <button class="btn">Новый фон</button>
+        <button class="quotes-btn">Новая цитата</button>
+        <div class="weather" lang="ru">
+          <!-- temperature -->
+          <div class="weather__temp-block">
+            <!-- city -->
+            <div class="weather__city-block">
+              <div class="weather__city-icon">
+                <img
+                  class="weather__city-icon-img"
+                  src="./assets/images/office-building.png"
+                  alt="building"
+                />
+              </div>
+              <div
+                id="weather__city"
+                class="weather__city"
+                contenteditable="true"
+              >
+                Костанай
+              </div>
+            </div>
+            <div class="weather__main">
+              <div class="weather__main-item">
+                <i class="weather-icon owf owf-5x"></i>
+              </div>
+              <div
+                id="weather__about"
+                class="weather__about weather__main-item"
+              ></div>
+              <div class="weather__icon weather__main-item">
+                <img
+                  class="weather__icon-img"
+                  src="./assets/images/celsius.png"
+                  alt="temperature"
+                />
+              </div>
+              <div
+                id="weather__temperature"
+                class="weather__temperature weather__main-item"
+              ></div>
+            </div>
+          </div>
+          <!-- Other Weather Parameter -->
+          <div class="weather__par-block">
+            <div class="weather__par-block-item">
+              <div class="weather__icon">
+                <img
+                  class="weather__par-block-img"
+                  src="./assets/images/humidity.png"
+                  alt="humidity"
+                />
+              </div>
+              <div id="weather__humidity" class="weather__humidity"></div>
+            </div>
+
+            <div class="weather__par-block-item">
+              <div class="weather__icon">
+                <img
+                  class="weather__par-block-img"
+                  src="./assets/images/pressure.png"
+                  alt="pressure"
+                />
+              </div>
+              <div id="weather__pressure" class="weather__pressure"></div>
+            </div>
+
+            <div class="weather__par-block-item">
+              <div class="weather__icon">
+                <img
+                  class="weather__par-block-img"
+                  src="./assets/images/windsock.png"
+                  alt="windsock"
+                />
+              </div>
+              <div id="weather__wind" class="weather__wind"></div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper-time">
+          <time id="time" class="time"></time>
+        </div>
+
+        <div class="dayofweek__block">
+          <span id="dayofweek" class="dayofweek"></span>,
+          <span id="daymonth" class="daymonth"></span>
+        </div>
+        <h1 lang="ru" class="greeting__block">
+          <span id="greeting" class="greeting"></span>
+          <span id="name" class="name" contenteditable="true">Введите имя</span>
+        </h1>
+        <div lang="ru" class="focus__block">
+          <h2 class="focus__block-title">Какую цель ставите на сегодня?</h2>
+          <h2 id="focus" class="focus" contenteditable="true">
+            Введите приоритетную цель
+          </h2>
+        </div>
+
+        <!-- <button class="quotes-btn"></button> -->
+
+        <div class="quotes-wrapper">
+          <blockquote id="quotes" class="quotes">Цитата дня</blockquote>
+          <div id="quotes-author" class="quotes-author">Автор</div>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
