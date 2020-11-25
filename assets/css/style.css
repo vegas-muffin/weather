@@ -1,0 +1,408 @@
+@import url(../fonts/fonts.min.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  min-width: 20rem;
+  background-size: cover;
+  background-position: center center;
+  color: #000000;
+  padding: 1rem;
+  transition: background-image 1s ease-in-out;
+}
+
+.container {
+  max-width: 62rem;
+}
+
+.btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  height: 4rem;
+  width: 4rem;
+  background: url(./assets/images/refresh.ico) no-repeat center;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  outline: none;
+  -webkit-animation: rotating 2s linear;
+  -moz-animation: rotating 2s linear;
+  -ms-animation: rotating 2s linear;
+  -o-animation: rotating 2s linear;
+  animation: rotating 2s linear;
+}
+
+.btn:active {
+  outline: none;
+  border-radius: 50%;
+  box-shadow: inset 1px 1px 10px -1px white;
+}
+
+.wrapper-time {
+  font-weight: bold;
+  margin: 1rem;
+  z-index: 0;
+}
+
+.time {
+  font-size: 8rem;
+  font-weight: bold;
+  z-index: 2;
+  color: white;
+  text-shadow: 0 0 1rem #34453f;
+}
+
+h1 {
+  margin-bottom: 3rem;
+}
+
+.focus__block-title,
+.focus {
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+  text-shadow: 0 0 1rem black;
+}
+
+.name {
+  text-transform: capitalize;
+}
+
+.quotes-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 0.5rem;
+}
+
+.quotes {
+  font-family: "quick kiss";
+  font-size: 1.5rem;
+  text-shadow: 0 0 1rem black;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  z-index: 0;
+  border-radius: 0.5rem;
+  width: 100%;
+  transition: background-image 2s ease-in-out;
+}
+
+.quotes-author {
+  position: absolute;
+  font-family: "tomato";
+  font-size: 1rem;
+  text-shadow: 0 0 1rem black;
+  bottom: -0.5rem;
+  right: 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  z-index: 5;
+  transition: font-size 2s ease-in-out;
+}
+
+.quotes-btn {
+  height: 4rem;
+  width: 4rem;
+  background: url(./assets/images/refresh-quote.ico) no-repeat center;
+  border: none;
+  cursor: pointer;
+}
+
+.quotes-btn:hover {
+  outline: none;
+  -webkit-animation: rotatingclock 2s linear;
+  -moz-animation: rotatingclock 2s linear;
+  -ms-animation: rotatingclock 2s linear;
+  -o-animation: rotatingclock 2s linear;
+  animation: rotatingclock 2s linear;
+}
+
+.quotes-btn:active,
+.quotes-btn:focus {
+  outline: none;
+}
+
+.quotes-btn:active {
+  border-radius: 50%;
+  box-shadow: inset 1px 1px 10px -1px white;
+}
+
+.weather {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.weather__city-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.weather__city-icon {
+  padding: 1rem;
+}
+
+.weather__city {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-shadow: 0 0 1rem black;
+}
+
+.weather__temp-block {
+  display: inherit;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.weather__par-block {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.weather__par-block-item {
+  display: inherit;
+  flex-direction: row;
+  align-items: center;
+}
+
+.weather__par-block-img {
+  height: 2rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.weather__main {
+  display: inherit;
+  flex-direction: row;
+  align-items: center;
+}
+
+.weather__main-item {
+  padding: 0.5rem;
+}
+
+.weather__temperature {
+  font-size: 2rem;
+  text-shadow: 0 0 2rem #34453f;
+}
+
+.weather__about {
+  font-size: 1.5rem;
+}
+
+.weather__about,
+.weather__temperature,
+.weather__humidity,
+.weather__pressure,
+.weather__wind {
+  font-family: "IBM Plex Serif", serif;
+  text-shadow: 0 0 1rem black;
+}
+
+.weather__about:first-letter {
+  font-size: 150%;
+}
+
+.dayofweek__block {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  text-shadow: 0.1rem 0.1rem 1rem #34453f;
+}
+
+.dayofweek,
+.daymonth {
+  text-shadow: 0 0 1rem #34453f;
+}
+
+.icon {
+  background-image: url(./assets/images/weather.png);
+  height: 3rem;
+  width: 3rem;
+  z-index: 1;
+}
+
+.weather__city-icon-img,
+.weather__icon-img {
+  height: 2rem;
+}
+
+.weather-icon {
+  color: #44aadd;
+}
+
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff,
+      0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8, 0px 10px 100px #7b96b8,
+      0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8,
+      0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
+  }
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  to {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes rotatingclock {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotatingclock {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 20rem) and (max-width: 38rem) {
+  body {
+    padding: 0.1rem;
+    min-height: 43rem;
+  }
+
+  .errors {
+    padding: 0.2rem;
+    font-size: 0.9rem;
+  }
+
+  .weather__about {
+    font-size: 1rem;
+  }
+
+  .weather__city {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+  }
+
+  .weather__main-item {
+    padding: 0.2rem;
+    font-size: 1rem;
+  }
+
+  .weather__city-icon {
+    padding: 0.2rem;
+  }
+
+  .weather__main {
+    flex-direction: column;
+  }
+
+  .weather__temperature {
+    padding: 0.2rem;
+    font-size: 1rem;
+  }
+
+  .wrapper-time {
+    padding: 0.2rem;
+    margin: 0.2rem;
+  }
+
+  .weather__par-block {
+    padding: 0.2rem;
+  }
+
+  .dayofweek__block {
+    font-size: 1rem;
+  }
+
+  .greeting__block {
+    font-size: 1rem;
+  }
+
+  .focus__block-title {
+    font-size: 1rem;
+  }
+
+  .focus {
+    font-size: 1rem;
+  }
+
+  .main {
+    min-width: 20rem;
+  }
+  .time {
+    font-size: 4rem;
+    padding: 0;
+  }
+
+  .quotes {
+    padding: 0.2rem;
+    margin: 0.2rem;
+  }
+  .quotes-author {
+    bottom: -3rem;
+  }
+}
