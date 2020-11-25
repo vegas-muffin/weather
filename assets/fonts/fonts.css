@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "tomato";
+  src: url(tomatoes-o8l8-webfont.woff2) format("woff2"),
+    url(tomatoes-o8l8-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'quick kiss';
+  src: url(quickkisspersonaluse-pxlz-webfont.woff2) format('woff2'),
+       url(quickkisspersonaluse-pxlz-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
